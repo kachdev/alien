@@ -1,0 +1,215 @@
+*{
+    margin:0;
+    padding:0;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+p{
+    text-align: justify;
+    line-height: 30px;
+}
+header{
+    display: flex;
+    width:100%;
+    top:0;
+    background: rgba(0,0,0,0.6);
+    padding:5px;
+    position: fixed;
+    color:#fff;
+    z-index:3;
+    align-items: center;
+}
+.cart{
+    padding-right:20px;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.astore{
+    margin-left:10px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.search{
+    flex-grow: 1;
+    text-align: center;
+}
+input[type="search"]{
+    width:100%;
+    max-width: 800px;
+    border:1px solid rgba(255, 255, 255, 0.57);
+    background: transparent url(../_images/search.png) 98% 50% no-repeat;
+    background-size: 40px; 
+    color:#fff;
+    border-radius: 5px;
+    margin:0 10px;
+    padding:15px;
+    font-size: 1.05em;
+}
+.cart span{
+    display: inline-block;
+    margin:0;
+    padding:15px;
+    border-left: 1px solid rgba(255, 255, 255, 0.32);
+}
+.backdrop{
+    width:100%;
+    height:100%;
+    position: fixed;
+    z-index: -2;
+    background: url(../_images/image2.jpg) no-repeat;
+    background-size: 100%;
+}
+.logout{
+    background:#4ED15F;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.greeting{
+    padding:10% 0;
+    width:100%;
+    text-align: center;
+    color:#fff;
+}
+.greeting h2{
+    font-size: 3em;
+    font-family: Bradley Hand ITC;
+}
+.greeting p{
+    max-width: 800px;
+    opacity: 0.7;
+    margin:auto;
+}
+.newItems{
+    background: white;
+    text-align: center;
+}
+.newItems h2, .about h2{
+    font-family:Maiandra GD;
+    color:#8F8F8F;
+    font-weight: 100;
+    font-size: 2em;
+    margin-top:20px;
+    padding:20px 0;
+}
+.itemList{
+    max-width: 1500px;
+    text-align: center;
+    margin:auto;
+}
+.item{
+    width:100%;
+    display: inline-block;
+    margin:20px;
+    max-width:350px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.19);
+}
+.itemTitle, .itemBottom{
+    padding: 15px 0;
+}
+.itemImg{
+    width:100%;
+    height:300px;
+    text-align: center;
+    overflow:hidden;
+}
+.itemCart div{
+    border: 2px solid #4BB658;
+    color: #4BB658;
+    padding:15px;
+    border-radius: 5px;
+    margin:auto;
+    margin-top:15px;
+    max-width:300px;
+    
+}
+.itemImg img{
+    width:100%;
+    margin:auto;
+}
+.discounts{
+    display: flex;
+    max-height: 500px;
+    overflow: hidden;
+}
+.message{
+    background: rgba(0, 0, 0, 0.67) url(../_images/discountwall.png) 100% 50% no-repeat;
+    background-size: 70%;
+    color:white;
+    flex-grow: 1;
+    padding:30px;
+}
+.message p {
+    max-width:700px;
+    margin:20px 0;
+}
+.button {
+    color: #75D680;
+    border: 2px solid #75D680;
+    width: 250px;
+    text-align: center;
+    border-radius: 5px;
+    padding:15px;
+}
+aside{
+    position: fixed;
+    width:100%;
+    max-width:250px;
+    background: rgba(0,0,0,0.7);
+    top:0;
+    height:100%;
+    z-index:2;
+    padding-top:90px;
+}
+.opt{
+    display: flex;
+    align-items: center;
+    color:white;
+    font-size: 1.2em;
+    border-bottom: 1px solid black;
+    padding:15px;
+}
+.opt div:first-child{
+    margin-right: 20px;
+}
+.active{
+    color:#45F55A;
+}
+.about{
+    background: #72EB80;
+    text-align: center;
+}
+.about h2{
+    margin-top:0;
+    padding-top:45px;
+    color:black;
+}
+.about p{
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px 0;
+    border-top: 1px solid black;
+}
+.moreItems{
+    background: white url(../_images/drop.png) 50% 0 no-repeat;
+    padding-top: 150px;
+    background-size: 100%;
+}
+@media screen and (max-width:800px){
+    .discounts{
+        flex-direction: column;
+    }
+    .pic img{
+        width:100%;
+    }
+    .discounts{
+        display: flex;
+        max-height: 700px;
+        overflow:hidden;
+    }
+}
